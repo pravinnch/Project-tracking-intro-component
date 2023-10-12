@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="max-w-screen-2xl mx-auto">
+  <nav class="flex justify-between pt-6 md:pt-0 ml-4 mr-8 relative z-10 "  >
+    <div class="logo"><img class="object-cover md:pt-6" src="images/logo.svg" alt=""></div>
+    <div class="menu absolute top-[17%] left-[16%]  md:relative md:top-0 md:left-0   ">
+      <ul class="hidden md:flex md:space-x-4 space-y-3 mt-10 md:mt-0 md:space-y-0 p-4 bg-white md:bg-transparent px-[28vw] md:px-0 menuItem   absolute    md:relative " >
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+    <div class="hamburger md:hidden"><img src="images/icon-hamburger.svg" alt=""></div>
+    
+  </nav>
+ <header class="md:flex mt-20 mb-14 md:gap-6 justify-between items-center static before:content-[''] before:absolute before:z-0 before:bg-[#EEF3F6] before:w-[56vw] before:h-[75vh] before:rounded-bl-3xl before:right-0 before:top-0" >
+  <img class="md:order-2 overflow-hidden mb-20 relative z-1" src="images/illustration-devices.svg" alt="">
+ 
+
+  <section class=" ml-2 md:ml-4 md:order-1">
+    <div class="uppercase" > <span class="text-[0.6rem] font-medium p-1 px-2 mr-1 md:mr-4 bg-black text-white rounded-full" >New</span> 
+      <span class="text-[0.7rem] tracking-wider opacity-70 " >Monograph Dashboard</span></div>
+    
+  
+    <h2 class="text-lg md:text-3xl font-bold uppercase my-4 opacity-80 " >
+      Powerful insights into your team
+    </h2>
+    <p class=" mt-6 mb-12 mr-0.5" >
+      Project planning and time tracking for agile teams
+    </p>
+    <span>
+    <button class="text-[0.7rem] bg-red-500 hover:bg-blue-700 md:text-sm text-white px-2  py-2 md:px-4 cursor-pointer uppercase" >Schedule a demo</button></span>
+    <span class="inline-flex text-[0.7rem]  mx-1 md:py-2 md:px-4  md:text-sm cursor-pointer hover:bg-blue-300 hover:text-white" >TO SEE A LIVE PREVIEW</span>
+  </section>
+</header>
+
+  
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Pravin Chaudhary</a>.
+    </p>
+  </footer>
+  <script>
+    const menuItem = document.querySelector('.menuItem');
+    const btn = document.querySelector('.hamburger');
+    btn.addEventListener('click', ()=>{
+      menuItem.classList.toggle('hidden')
+    })
+  </script>
+</body>
+</html>
